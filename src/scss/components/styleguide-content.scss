@@ -1,0 +1,17 @@
+.styleguide-content{
+	@apply .my-3 .flex-grow .mr-4;
+
+	h1,h2,h3{
+		&.styleguide-heading{
+			@apply .mb-2 .mt-6 .text-black;
+		}
+
+		&.styleguide-header--first{
+			@apply mt-0;
+		}
+	}
+	
+	p.styleguide-details{
+		@apply .text-sm .mb-4 .text-grey-darker;
+	}
+}

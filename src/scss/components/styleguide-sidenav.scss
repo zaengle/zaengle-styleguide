@@ -1,0 +1,27 @@
+.styleguide-nav{
+	@apply .max-w-xs .self-start .w-64;
+}
+
+.styleguide-nav-list{
+	@apply .list-reset .mb-1 .mr-12  .p-4;
+
+	a{
+		@apply .no-underline .py-1 .mb-1 .inline-block .text-black .text-sm;
+
+		&:hover{
+			@apply .underline
+		}
+	}
+}
+
+.styleguide-nav-active,
+.styleguide-nav-active a{
+	@apply .text-zaengle-teal .underline;
+
+
+}
+
+.styleguide-nav-title{
+		@apply .font-bold .uppercase .text-grey .text-xs .tracking-wide .mb-1;
+}
+

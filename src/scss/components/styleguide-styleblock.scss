@@ -1,0 +1,35 @@
+.styleblock{
+	@apply .border .border-grey-darker .rounded 
+	.w-full .block .overflow-hidden .mb-12
+	.max-w-lg
+	.text-sm .shadow;
+
+	.styleblock_example{
+		@apply .p-4 .border-b .text-sm;
+	}
+
+	.styleblock_code{
+		overflow: auto;
+		max-width: 100%;
+
+		&::-webkit-scrollbar {
+		    width: 1em;
+		}
+		 
+		&::-webkit-scrollbar-track {
+		    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		}
+		 
+		&::-webkit-scrollbar-thumb {
+		  background-color: config('colors.grey-dark');
+		  outline: 1px solid config('colors.black');
+		}
+	}
+
+	// this overrides some prism classes
+	:not(pre) > code[class*="language-"], 
+	pre[class*="language-"]{
+		margin:0;
+		border-radius: 0;
+	}
+}

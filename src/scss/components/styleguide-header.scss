@@ -1,0 +1,19 @@
+.styleguide-header{
+	@apply .border .border-b .p-4 .flex .items-center .bg-zaengle-grey;
+
+	h1.styleguide-pagetitle{
+		@apply .font-light .text-xl;
+
+		strong{
+			@apply .font-bold;
+		}
+
+		span{
+			@apply .text-xs .font-semibold .opacity-25 .block .mt-px;
+		}
+	}
+
+	svg.styleguide-zaengle-icon{
+		@apply .fill-current .text-zaengle-teal .w-12 .mr-4;
+	}
+}

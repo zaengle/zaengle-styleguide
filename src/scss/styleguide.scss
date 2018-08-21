@@ -1,0 +1,14 @@
+@tailwind preflight;
+@tailwind components;
+
+@import "styleguide-prism";
+
+@import "components/styleguide-wrapper";
+@import "components/styleguide-header";
+@import "components/styleguide-footer";
+@import "components/styleguide-sidenav";
+@import "components/styleguide-content";
+@import "components/styleguide-styleblock";
+
+@tailwind utilities;
+
