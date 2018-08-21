@@ -1,7 +1,7 @@
 {   
     "name": "zaengle-styleguide",
     "version": "1.0.0",
-    "description": "Styleguide layouts for use in Zaengle projects ",
+    "description": "Styleguide layouts for use in Zaengle projects",
     "author": "Philip Zaengle",
     "license": "MIT",
     "private": true,
@@ -21,11 +21,11 @@
         "laravel-mix": "^2.0",
         "laravel-mix-purgecss": "^2.2.0",
         "laravel-mix-tailwind": "^0.1.0",
-        "tailwindcss": "^0.6.1",
-        "vue": "^2.5.17"
+        "tailwindcss": "^0.6.1"
     },
     "dependencies": {
         "prismjs": "^1.15.0",
-        "sticky-js": "^1.2.0"
+        "sticky-js": "^1.2.0",
+        "vue": "^2.5.17"
     }
 }
