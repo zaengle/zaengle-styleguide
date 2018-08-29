@@ -10,9 +10,6 @@ anchors.options = {
 anchors.add();
 anchors.remove(".styleblock h1, .styleblock h2, .styleblock h3, .styleblock h4,.styleblock h5, .styleblock h6");
 
-
-
-
 let stuck = new Sticky('.styleguide-js-sticky'); 
 
 /* PrismJS 1.15.0
