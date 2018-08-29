@@ -41,6 +41,7 @@
 <h2 class="styleguide-heading">Headings</h2>
 <article class="styleblock">
 		<section class="styleblock_example">
+				<h2>What!</h2>
 				<p> Some Code?</p>
 		</section>
 

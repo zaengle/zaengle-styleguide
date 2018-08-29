@@ -1,4 +1,4 @@
-{   
+{
     "name": "zaengle-styleguide",
     "version": "1.0.0",
     "description": "Styleguide layouts for use in Zaengle projects",
@@ -24,6 +24,7 @@
         "tailwindcss": "^0.6.1"
     },
     "dependencies": {
+        "anchor-js": "^4.1.1",
         "prismjs": "^1.15.0",
         "sticky-js": "^1.2.0",
         "vue": "^2.5.17"

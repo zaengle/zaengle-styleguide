@@ -2,6 +2,7 @@
 @tailwind components;
 
 @import "styleguide-prism";
+@import "styleguide-anchorjs";
 
 @import "components/styleguide-wrapper";
 @import "components/styleguide-header";
@@ -11,4 +12,3 @@
 @import "components/styleguide-styleblock";
 
 @tailwind utilities;
-
