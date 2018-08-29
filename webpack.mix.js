@@ -20,6 +20,7 @@ if (mix.inProduction()) {
         'example/**/*.php',
         'dist/**/*.js'
       ],
+      whitelistPatterns: [/^prism/],
       extensions: ['html', 'js', 'php']
     });
 }
