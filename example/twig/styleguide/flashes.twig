@@ -1,0 +1,49 @@
+{% extends 'styleguide/_layout_styleguide' %}
+{% import 'styleguide/_macros_styleguide' as styleguide %}
+
+{% block content %}
+	{# Page intro #}
+	<h1 class="styleguide-heading styleguide-header--first">Flash</h1>
+	<p class="styleguide-details">These will keep the user informed of any critical information as they move through the application</p>
+
+
+	{# Page code block #}
+	{% set code %}
+<div class="flash" role="alert">
+	<strong>Hey!</strong> This is a generic <a href="#">message</a>.
+</div>
+<div class="flash flash--success" role="alert">
+	<strong>Well done!</strong> You successfully read <a href="#">this important alert message</a>.
+</div>
+<div class="flash flash--info" role="alert">
+	<strong>Heads up!</strong> This <a href="#">alert needs your attention</a>, but it's not super important.
+</div>
+<div class="flash flash--warning flash--close" role="alert">
+	<strong>Warning!</strong> Better check yourself, you're <a href="#">not looking too good</a>.
+</div>
+<div class="flash flash--danger flash--close" role="alert">
+	<strong>Oh snap!</strong> <a href="#">Change a few things up</a> and try submitting again.
+</div>
+	{% endset %}
+	{{ styleguide.code("Full Flash", code) }}
+
+	{# Page code block #}
+	{% set code %}
+<div class="flash flash--inline flash--close" role="alert">
+	<strong>Hey!</strong> This is a generic <a href="#">message</a>.
+</div>
+<div class="flash flash--inline flash--success flash--close" role="alert">
+	<strong>Well done!</strong> You successfully read <a href="#">this important alert message</a>.
+</div>
+<div class="flash flash--inline flash--info flash--close" role="alert">
+	<strong>Heads up!</strong> This <a href="#">alert needs your attention</a>, but it's not super important.
+</div>
+<div class="flash  flash--inline flash--warning" role="alert">
+	<strong>Warning!</strong> Better check yourself, you're <a href="#">not looking too good</a>.
+</div>
+<div class="flash flash--inline flash--danger" role="alert">
+	<strong>Oh snap!</strong> <a href="#">Change a few things up</a> and try submitting again.
+</div>
+	{% endset %}
+	{{ styleguide.code("Inline Flash", code) }}
+{% endblock %}

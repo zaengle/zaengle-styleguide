@@ -1,0 +1,105 @@
+{% extends 'styleguide/_layout_styleguide' %}
+{% import 'styleguide/_macros_styleguide' as styleguide %}
+
+{% block content %}
+
+	<h1 class="styleguide-heading styleguide-header--first">Typography</h1>
+	<p class="styleguide-details">Commonly used components are extracted from Tailwind's vast array of utility classes.</p>
+	
+	{# Page code block #}
+	{% set code %}
+		<h1 class="title">This is the primary heading and there should only be one of these per page</h1>
+	{% endset %}
+	{{ styleguide.code("Heading Title", code) }}
+
+	{# Page code block #}
+	{% set code %}
+		<h1>This is the primary heading and there should only be one of these per page</h1>
+	{% endset %}
+	{{ styleguide.code("Heading H1", code) }}
+
+	{# Page code block #}
+	{% set code %}
+		<h2> This is the secondary heading and there should only be one or two of these per page</h2>
+	{% endset %}
+	{{ styleguide.code("Heading H2", code) }}
+
+	{# Page code block #}
+	{% set code %}
+		<h3>The third heading level.</h3>
+	{% endset %}
+	{{ styleguide.code("Heading 3", code) }}
+
+	{# Page code block #}
+	{% set code %}
+		<h4>The fourth heading level.</h4>
+	{% endset %}
+	{{ styleguide.code("Heading 4", code) }}
+
+	{# Page code block #}
+	{% set code %}
+		<h5> The fifth heading level.</h5>
+	{% endset %}
+	{{ styleguide.code("Heading 5", code) }}
+
+	{# Page code block #}
+	{% set code %}
+		<p>Pellentesque habitant <a href="/">morbi tristique senectus</a> 
+et netus et malesuada fames ac turpis egestas. Vestibulum tortor 
+uam, feugiat vitae, ultricies eget, tempor sit amet, ante. 
+Donec eu libero sit amet quam egestas semper. Aenean 
+ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+
+	<p>Pellentesque habitant <a href="/">morbi tristique senectus</a> 
+et netus et malesuada fames ac turpis egestas. Vestibulum tortor 
+uam, feugiat vitae, ultricies eget, tempor sit amet, ante. 
+Donec eu libero sit amet quam egestas semper. Aenean 
+ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+	{% endset %}
+	{{ styleguide.code("Paragraph", code) }}
+
+	{# Page code block #}
+	{% set code %}
+		<h5> The fifth heading level.</h5>
+	{% endset %}
+	{{ styleguide.code("Heading 5", code) }}
+
+	{# Page code block #}
+	{% set code %}
+<ul>
+	<li>This is a list item</li>
+	<li>So is this - <a href="">there could</a> be more</li>
+	<li>Make sure to style list items to:
+		<ul>
+			<li>Not forgetting child list items</li>
+			<li>Not forgetting child list items</li>
+			<li>Not <a href="">forgetting child list</a> items</li>
+			<li>Not forgetting child list items</li>
+		</ul>
+	</li>
+	<li>A couple more</li>
+	<li>top level list items</li>
+</ul>
+	{% endset %}
+	{{ styleguide.code("Unorderd List", code) }}
+
+	{# Page code block #}
+	{% set code %}
+<ol>
+	<li>This is a list item</li>
+	<li>So is this - <a href="">there could</a> be more</li>
+	<li>Make sure to style list items to:
+		<ol>
+			<li>Not forgetting child list items</li>
+			<li>Not forgetting child list items</li>
+			<li>Not <a href="">forgetting child list</a> items</li>
+			<li>Not forgetting child list items</li>
+		</ol>
+	</li>
+	<li>A couple more</li>
+	<li>top level list items</li>
+</ol>
+	{% endset %}
+	{{ styleguide.code("Ordered List", code) }}
+
+{% endblock %}

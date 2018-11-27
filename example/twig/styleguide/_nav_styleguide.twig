@@ -1,0 +1,36 @@
+{% set styleguide = 
+	{	
+		'Introduction' :
+		{
+			'Intro': '',
+		},
+		'Basics' :
+		{
+			'Typograph': 'typography',
+			'Tables': 'tables',
+			'Forms': 'forms',
+		},
+		'Components' :
+		{	
+			'Flashes': 'flashes',
+			'Cards': 'cards',
+			'Heros': 'heros',
+		}
+	} 
+%}
+
+{# 
+	You don't need to worry about the below code
+	I Promise.
+#}
+{% set currentUri = craft.app.request.getPathInfo() %}
+{% for type, nav in styleguide%}
+<ul class="styleguide-nav-list">
+	<li class="styleguide-nav-title">{{type}}</li>
+	{% for title, uri in nav %}
+		<li class="{{ ('styleguide/' ~ uri) == currentUri ? 'styleguide-nav-active' }}">
+			<a href="/styleguide/{{uri}}">{{title}}</a>
+		</li>
+	{% endfor %}
+</ul>
+{% endfor %}

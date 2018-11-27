@@ -1,0 +1,11 @@
+{% macro code(title, code) %}
+	<h2 class="styleguide-heading">{{title }}</h2>
+	<article class="styleblock">
+		<section class="styleblock_example">
+			{{ code }}
+		</section>
+		<pre class="styleblock_code"><code class="language-html">
+		{{ code | e('html')}}
+		</code></pre>
+	</article>
+{% endmacro %}
